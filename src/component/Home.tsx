@@ -15,6 +15,9 @@ const Home = () => {
         <li>
           <Link href="/003">003 TODO</Link>
         </li>
+        <li>
+          <Link href="/004">004 Timer</Link>
+        </li>
       </ul>
     </>
   )

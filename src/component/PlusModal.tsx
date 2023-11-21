@@ -22,7 +22,7 @@ const PlusModal: React.FC<PlusModalProps> = ({ Todos, setTodos }) => {
   const [title, setTitle] = useState('')
   const [message, setMessage] = useState('タスク名を入力してください')
 
-  const inputChange = (e: any) => {
+  const inputChange = (e: any): void => {
     if (e.target.value === '') {
       setMessage('タスク名を入力してください')
       setTitle('')
@@ -32,7 +32,7 @@ const PlusModal: React.FC<PlusModalProps> = ({ Todos, setTodos }) => {
     }
   }
 
-  const add = () => {
+  const add = (): void => {
     if (!(title === '')) {
       const newTodo: TodoType = {
         title: title,

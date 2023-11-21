@@ -28,7 +28,7 @@ const Todo = () => {
   ]
   const [Todos, setTodos] = useState(initialTodos)
 
-  const deleteTodo = (e: any) => {
+  const deleteTodo = (e: any): void => {
     const newTodos = Todos.filter((todo) => {
       return todo.title !== e.target.value
     })
