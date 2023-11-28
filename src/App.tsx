@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './component/Home'
-import HelloWorld from './component/HelloWorld'
-import Counter from './component/Counter'
-import Todo from './component/Todo'
-import Timer from './component/Timer'
+import Home from './Home'
+import HelloWorld from './01HelloWorld/HelloWorld'
+import Counter from './02Counter/Counter'
+import Todo from './03TODO/Todo'
+import Timer from './04Timer/Timer'
+import Calc from './05Calc/Calc'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/002" element={<Counter />} />
         <Route path="/003" element={<Todo />} />
         <Route path="/004" element={<Timer />} />
+        <Route path="/005" element={<Calc />}></Route>
       </Routes>
     </div>
   )

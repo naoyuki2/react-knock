@@ -1,5 +1,4 @@
 import { Link } from '@chakra-ui/react'
-import React from 'react'
 
 const Home = () => {
   return (
@@ -17,6 +16,9 @@ const Home = () => {
         </li>
         <li>
           <Link href="/004">004 Timer</Link>
+        </li>
+        <li>
+          <Link href="/005">005 Calc</Link>
         </li>
       </ul>
     </>

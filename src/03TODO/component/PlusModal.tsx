@@ -11,7 +11,7 @@ import {
   Text,
 } from '@chakra-ui/react'
 import { useState } from 'react'
-import { TodoType } from '../type'
+import { TodoType } from '../../type'
 
 type PlusModalProps = {
   Todos: TodoType[]

@@ -11,7 +11,7 @@ import {
   CardHeader,
   Heading,
 } from '@chakra-ui/react'
-import PlusModal from './PlusModal'
+import PlusModal from './component/PlusModal'
 import { TodoType } from '../type'
 import { useState } from 'react'
 
