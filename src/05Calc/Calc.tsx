@@ -1,8 +1,12 @@
-import React from 'react'
+import Number from './component/Number'
 
 const Calc = () => {
   return (
-    <div>Calc</div>
+    <section>
+      {[...Array(10).keys()].map((i) => (
+        <Number key={i} num={i} />
+      ))}
+    </section>
   )
 }
 
