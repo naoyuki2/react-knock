@@ -1,10 +1,9 @@
-//npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 import { Mass } from './component/Mass'
 import Display from './component/Display'
 import { useState } from 'react'
 
 const Calc = () => {
-    const [input, setInput] = useState<string>('0')
+    const [input, setInput] = useState<string>('')
     const [result, setResult] = useState<string>('')
     const [resultFlg, setResultFlg] = useState<boolean>(false)
     const MassArray = [
