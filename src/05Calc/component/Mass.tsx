@@ -22,11 +22,11 @@ export const Mass = ({
         if (resultFlg) {
             setResultFlg(false)
         }
-        if (input === '0') {
-            setInput(mass)
-        } else {
-            setInput(input + mass)
-        }
+        // if (input === '0') {
+        //     setInput(mass)
+        // } else {
+        setInput(input + mass)
+        // }
     }
     const calculateResult = () => {
         try {
@@ -35,11 +35,11 @@ export const Mass = ({
             setResult('Error')
         } finally {
             setResultFlg(true)
-            setInput('0')
+            setInput('')
         }
     }
     const clear = () => {
-        setInput('0')
+        setInput('')
         setResult('')
     }
     return (

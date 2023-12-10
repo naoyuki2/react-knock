@@ -23,6 +23,9 @@ const Home = () => {
                 <li>
                     <Link href="/006">006 Profile</Link>
                 </li>
+                <li>
+                    <Link href="/007">006 Weather</Link>
+                </li>
             </ul>
         </>
     )
