@@ -6,16 +6,14 @@ const Profile = () => {
     const [name, setName] = useState<string>('')
     const [birthday, setBirthday] = useState<String>()
     const [tel, setTel] = useState<string>()
-    const [profileImage, setProfileImage] = useState<
-        string | undefined | null | ArrayBuffer
-    >('')
+    const [profileImage, setProfileImage] = useState<string>('')
     const handleUploadImage = (e: any) => {
         const files = e.target.files
         if (files.length > 0) {
             const file = files[0]
             const reader = new FileReader()
             reader.onload = (e) => {
-                setProfileImage(e.target?.result)
+                setProfileImage(e.target?.result as string)
             }
             reader.readAsDataURL(file)
         } else {
